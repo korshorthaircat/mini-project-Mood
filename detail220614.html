@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail page</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!--브라우저별 스타일 초기화-->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <!--적용할 스타일 정의-->
+    <link rel="stylesheet" href="css/detail220607.css">
+    <!--부트스트랩 사용-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+</head>
+
+<body>
+    <header class="movie-title">
+        작품 제목
+    </header>
+
+    <!-- 할일
+    기본정보 안에 탭전환 넣기 (부트스트랩)
+    별점/리뷰란의 닉네임,별점 영역과 리뷰 영역 구분하기
+    -->
+
+    <div class="firstSection">
+        <div class="summary">
+            <p>영화 이미지</p>
+            <section class="movie-image">
+                <p>영화 이미지</p>
+            </section>
+            <section class="go-and-watch">
+                <p>보러가기</p>
+            </section>
+        </div>
+        <!--기본정보 영역-->
+        <div class="info"> 
+            <!--탭메뉴 만들기-->
+            <div class="tab-menu-section">
+                <dl>
+                    <dt>기본정보</dt>
+                    <dd>
+                        <ul>
+                            <li>개봉</li>
+                            <li>등급</li>
+                            <li>장르</li>
+                            <li>국가</li>
+                            <li>러닝타임</li>
+                            <li>수상내역</li>
+                            <li>배급</li>
+                        </ul>
+                    </dd>
+            
+                    <dt>감독/출연</dt>
+                    <dd>
+                        <ul>
+                            <li>감독</li>
+                            <li>주연</li>
+                            <li>조연</li>
+                        </ul>
+                    </dd>
+            
+                    <dt>줄거리</dt>
+                    <dd>
+                        <p>전원백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족. 장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는 모처럼 싹튼 고정수입의 희망이다. 온 가족의 도움과 기대 속에 박사장(이선균) 집으로 향하는 기우. 글로벌 IT기업 CEO인 박사장의 저택에 도착하자 젊고 아름다운 사모님 연교(조여정)가 기우를 맞이한다. 그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니…</p>
+                    </dd>
+            
+                    <dt>관련 작품 추천</dt>
+                    <dd>
+                        <p>이미지들</p>
+                    </dd>
+                </dl>
+            </div>
+        </div>     
+    </div>
+    
+    <div class="secondSection">
+        <p>관련 영상</p>
+        <div class="relevant-video">
+            
+        </div>
+    </div>
+
+    <div class="thirdSection">
+        <p>별점 리뷰</p>
+        <div class="rating-review">
+            
+        </div>
+    </div>
+
+
+    <script>
+        var $tapName = $("dt") //탭메뉴를 변수에 지정
+
+        $tapName.click(function() { //탭네임 클릭 이벤트 발생시
+            
+            $("dd").addClass("hidden");
+            $(this).next().removeClass("hidden");
+        });
+    </script>
+</body>
+</html>
