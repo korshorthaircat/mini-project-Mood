@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*1. 공통부분 작성*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: '나눔고딕', 'NanumGothic';
+    line-height: 1.7;
+    color: lightgray;
+    background-color: black;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:hover {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*2. 헤더부분 작성*/
+.logo {
+    width: 210px;
+    
+}
+
+.page-hader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/*리스트 페이지 푸터 부분 작성*/
+footer p {
+    font-size: 0.875rem;
+}
+
+/*리스트 페이지 헤더 부분 작성*/
+.page-title {
+    background-color: rgb(39, 39, 39);
+    height: 120px;
+}
+
+/*페이지 콘텐츠 부분 작성*/
+form {
+    text-align: right;
+}
+
+.button {
+    background-color: blue;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding : 8px 15px;
+    
+}
+
+
+
+
+.table {
+    
+    width: 1240px;
+    margin: 0 auto;
+    border-collapse:collapse ;
+    
+}
+
+th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 50px;
+    text-align: center;
+}
+
+
+td {
+    border-bottom: 1px solid gray;
+    height: 50px;   
+}
+
+.subject {
+    text-align: center;
+}
+
+
+
+.list-title {
+    display: flex;  
+    padding: 0;
+    
+}
+
+ul li {
+    margin: 0 auto;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(39, 39, 39);
+    width: 310px;
+    height: 50px;
+    
+}
+
+.list1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.list4 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
