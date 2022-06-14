@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: black;
+    font: white;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+div p {
+    font: white;
+}
+
+body header, body div{
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.movie-title {
+    color: white;
+    font-size: 2.5rem;
+    width: auto;
+    height: 50px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    width: auto;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+.movie-image {
+    color: white;
+    background-color:rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 640px;
+    border-radius: 40px;
+}
+
+.go-and-watch {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 790px;
+    display: flex;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+.relevant-video {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: auto;
+    height: 640px;
+    margin: 10px auto 0;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+.rating-review {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: auto;
+    height: 640px;
+    margin: 10px auto 0;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+
+/*기본정보 탭전환 영역 시작*/
+    
+    .tab-menu-section {
+        display: auto;
+    }
+
+    /*탭메뉴 버튼이 위치하는 상단*/
+    dl {
+        width: 600px;
+        height: 100px;
+        position: relative;
+    }
+    
+    /* 탭 메뉴버튼 */
+    dt { 
+        float: left;
+        width: 150px;
+        height: 30px;
+        z-index: 9;
+        position: relative;
+        text-align: center;
+        background: gray;
+    }
+
+    dt:hover {
+        color: red;
+    }
+
+    /* dt.select {
+        color: red;
+    } */
+    
+
+    /*탭 메뉴에 해당하는 내용*/
+    dd {
+        position: absolute;
+        padding-top: 30px;
+        background-color: #f3f3f3;
+        width: 600px;
+        height: 600px;
+        margin: 0;
+    }
+
+    /* 하단의 콘텐츠 내용은 hidden 클래스를 사용하여
+    이 클래스명이 있는 요소는 안보이도록 바꾸기 
+    선택한 탭메뉴에 해당하는 영역만 보여주고
+    선택되지 않은 영역은 숨겨야함*/
+    dd.hidden {
+        display: none;
+    }
