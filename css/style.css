@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+/*1. 공통부분 작성*/
+html {
+    font-size : 100%;
+}
+
+body {
+    font-family: "나눔고딕", NanumGothic, "맑은고딕", MalagunGothic, "Apple SD Gothic Neo", sans-serif;
+    line-height:  1.7;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*2. 헤더부분 작성*/
+/*메뉴 수평 출력*/
+.header-wrap {
+    position: relative;
+    height: fit-content;
+}
+
+.nav-wrap {
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    list-style: none;
+}
+
+.logo-wrap {
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.main-nav > li {
+    margin-left: 70px;
+    position: relative;
+    float: left;
+}
+
+/*드랍다운 메뉴*/
+.main-nav > li > ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 130px;
+    text-align: center;    
+    padding: 0px;
+}
+
+.main-nav > li:hover > ul {
+    display: block;
+    color: #000000;
+    font-size: 1.0rem;
+}
+
+/*로그인 ul 수평정렬*/
+.user-nav {
+    display: flex;
+    font-size: 0.75rem;
+    list-style: none;
+    z-index: 2;
+    margin-top: 24px;
+}
+
+.user-nav li {
+    margin-left: 36px;
+}
+
+.user-nav a {
+    color: #ffffff;
+}
+
+/*헤더 안에 내용 정렬*/
+.page-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*3. 캐러셀부분*/
+.mySlides {
+    display: none
+}
+
+.main-carousel {
+    margin: 0 auto;
+    position: relative;
+    top: -65px;
+    z-index: 1;
+    width: 100%;
+}
+
+.main-carousel img {
+    width: 100%;
+}
+
+.devide{
+    width: 100%;
+    background: black;
+    
+}
+
+#class1 {
+    width: 32%;
+   
+}
+#class2 {
+    width: 32%;
+    
+}
+#class3 {
+    width: 32%;
+    
+}
+
+/*이전, 다음 버튼*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/*다음 버튼 위치*/
+.next {
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/*4. 카드 부분*/
+.main-card {
+    position: relative;
+    max-width: 1200px;
+    margin: 10px auto 20px;
+    color: #000000;
+}
+
+.card-wrap {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.card-title>h3 {
+    display: inline-block;
+}
+
+.card-title>a {
+    position: absolute;
+    right: 0;
+}
+
+.card-header>img {
+    width: 100%;
+}
+
+.card-content-title {
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.card-content-short {
+    font-size: 0.9rem;
+}
+
+.lecture-detail {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 3px 3px;
+    margin-top: 10px;
+}
+
+/*5. 그리드 부분*/
+.main-table {
+    position: relative;
+    max-width: 1200px;
+    margin: 70px auto 20px;
+    display: flex;
+    color: #000000;
+    display: flex;
+}
+
+.main-table>section {
+    width: 100%;
+}
+
+.table-title>h3 {
+    display: inline-block;
+}
+
+.table-title>a {
+    position: absolute;
+    right: 0;
+}
+
+.job-table {
+    border-collapse:collapse;
+    border-color:#ccc;
+    border-spacing:0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.job-table td {
+    background-color:#fff;
+    border-color:#ccc;
+    border-style:solid;
+    border-width:1px;
+    color:#333;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.job-table th {
+    background-color:#f0f0f0;
+    border-color:#ccc;
+    border-style:solid;
+    border-width:1px;
+    color:#333;
+    font-size:14px;
+    font-weight:bold;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+    text-align: center;
+}
+
+.job-table .job-table-td {
+    text-align:left;
+    vertical-align:top;
+}
+
+.job-detail {
+    cursor: pointer;
+}
+
+/*6. 푸터 부분*/
+.ft {
+    background-color: #1f1f27;
+}
+
+.ft-wrapper {
+    max-width: 1200px;    
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    text-align: left;
+}
+
+.ft-tel {
+    font-size: 20px;
+}
+
+.ft-branch, .ft-address {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.ft-header>img, .ft-content>img {
+    float: right;
+}
+
+.ft-btn-wrapper, .ft-copywrite {
+    display: inline-block;
+}
+
+.ft-copywrite {
+    float: right;
+}
+
+.ft-btn-wrapper>a {
+    background: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/*7. 로그인 페이지*/
+.header-wrap-sc {
+    color: #000;
+}
+
+.form-wrapper {
+    color: #000;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-form {
+    border: 1px solid silver;
+    width: 360px;
+    min-height: 200px;
+    margin: 100px auto 100px;
+    text-align: center;
+    padding: 35px;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+    border: 1px solid silver;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.login-submit {
+    background-color: #000;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.login-submit input[type="submit"] {
+    color: #fff;
+}
+
+.login-btn-wrap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-btn-wrap a {
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.required {
+    background: url('https://www.bitcamp.co.kr/theme/basic/img/require.png') no-repeat right top;
+}
