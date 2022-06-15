@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: black;
+    font: white;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+div p {
+    font: white;
+}
+
+body header, body div{
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.movie-title {
+    color: white;
+    font-size: 2.5rem;
+    width: auto;
+    height: 50px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 0;
+    width: auto;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+.movie-image {
+    color: white;
+    background-color:rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 640px;
+    border-radius: 40px;
+}
+
+.go-and-watch {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 790px;
+    display: flex;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+.relevant-video {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: auto;
+    height: 640px;
+    margin: 10px auto 0;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+.rating-review {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: auto;
+    height: 640px;
+    margin: 10px auto 0;
+    border: white solid;
+    border-radius: 40px;
+
+}
+
+
+/* 기본정보 영역의 탭전환 메뉴 시작 */
+ul.tabs{
+	margin: 20px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+  display: inline-block;
+	background: #898989;
+	color: white;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: #e0e0e0;
+	color: #222;
+}
+
+.tab-content{
+  display: none;
+	background: #e0e0e0;
+	padding: 12px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
