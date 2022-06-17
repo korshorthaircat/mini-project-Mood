@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body {
+    margin: 0 auto; 
+    width: 1200px;
+    height: 1200px;
+    
+}
+#container {
+    padding-left: 100px;
+    width: 1200px;
+    height: 1200px;
+    padding-top: 100px;
+    
+}
+
+/* info */
+#info {
+    width: 100%;
+    height: 400px;
+    border: 1px solid white;
+}
+
+.lb-wrap {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid white;
+    position: relative;
+  }
+
+/* photo */
+#photo {
+    float: left;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #FFEEBC;
+    position: absolute;
+    border: 1px solid white;
+    
+}
+
+#photo img {
+    width: 250px;
+    height: 350px;
+}
+
+#photo p {
+    color: white;
+    text-align: center;
+}
+
+/* id */
+#idPassword {
+    float: right;
+    width: 900px;
+    height: 395px;
+    padding-top: 25px;
+    border: 1px solid white;
+}
+
+#idPassword table { 
+    margin-top: 20px;
+    
+}
+
+#idPassword th {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    float: left;
+    
+    
+}
+
+#idPassword td {
+    width: 500px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    float: left;  
+}
+
+
+
+a {
+    background-color: black;
+    color: white;
+}
+
+.btn{
+    text-decoration: none;
+    font-size:1rem;
+    color:white;
+    display:inline-block;
+  }
+
+.btn.blue{
+    background-color: rgb(85, 85, 85);
+    padding: 5px;
+  }
+
+#contents {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* list */
+#list {
+    position: relative;
+    float: left;
+    width: 49%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1em;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px
+}
+
+#list b{
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+#list img{
+    width: 100px;
+    height: 200px;
+}
+
+
+#list li{
+    list-style-type: none;
+    padding-left:20px;
+    float: left; 
+    margin: 10px; 
+    display: block;
+}
+
+#list div.profile {
+    width: 120px; 
+    height: 200px; 
+    background: transparent;
+    border: 1px solid black;
+}
+#list div.profile-card{
+    width: 100px; 
+    height: 150px;
+    background: white;
+}
+#list p.profile-card {
+    color: white; 
+    text-align: center;  
+}
+
+#list img {
+    width: 120px; 
+    height: 200px;
+}
+
+
+
+/* review */
+#review {
+    float: right;
+    color: white;
+    background-color:black;
+    width: 49%;
+    height: 400px; 
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#review .review-text b{
+    font-size: 1.5rem;
+}
+
+#review .review-text{
+    text-align: center;
+    font-size: 1em;
+    height: 32px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+.mySlides img {
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    
+}
+
+.main-carousel {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.main-carousel img {
+    width: 100%;
+}
+
+
+
+
+
+/*이전, 다음 버튼*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+/*다음 버튼 위치*/
+.next {
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+}
+
+.fate {
+    animation-name: fate;
+    animation-duration: 1.5s;
+}
+
+.devide{
+    width: 100%;
+    background: black;
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-top: 50px;
+}
+
+#class1 {
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 30px;
+   
+}
+#class2 {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+#class3 {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+ 
