@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail page</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <!--브라우저별 스타일 초기화-->
+    <link rel="stylesheet" href="css/ress.min.css">
+    <!--적용할 스타일 정의-->
+    <link rel="stylesheet" href="css/detail220617_2.css">
+   
+</head>
+
+<body>
+    <header class="movie-title">
+        <h1>작품 제목</h1>
+        <!-- 마이 리스트에 추가 아이콘(하트) -->
+        <img src="images/icon_white_heart.png" width="35px" alt="하트" id="heart">
+    </header>
+
+    <div class="firstSection">
+        <div class="summary">
+            <!--영화 이미지-->
+            <section class="movie-image">
+            </section>
+            <!--보러가기-->
+            <section class="go-and-watch">
+        
+            </section>
+        </div>
+        <!--기본정보-->
+        <div class="info">
+            <div class="container">
+                <!-- 탭 메뉴 상단-->
+                    <ul class="tabs">
+                        <li class="tab-link current" data-tab="tab-1">기본정보</li>
+                        <li class="tab-link" data-tab="tab-2">감독/출연</li>
+                        <li class="tab-link" data-tab="tab-3">줄거리</li>
+                        <li class="tab-link" data-tab="tab-4">추천작품</li>
+                    </ul>
+                <!-- 탭 메뉴 내용-->
+                    <div id="tab-1" class="tab-content current">
+                    <!--탭 메뉴1 내용-->
+                        <table>
+                            <tr>
+                                <th>개봉</th>
+                                <td>2019.05.30.</td>
+                            </tr>
+                            <tr>
+                                <th>등급</th>
+                                <td>15세 관람가</td>
+                            </tr>
+                            <tr>
+                                <th>등급</th>
+                                <td>2행 2열</td>
+                            </tr>
+                            <tr>
+                                <th>장르</th>
+                                <td>드라마</td>
+                            </tr>
+                            <tr>
+                                <th>국가</th>
+                                <td>한국</td>
+                            </tr>
+                            <tr>
+                                <th>등급</th>
+                                <td>15세 관람가</td>
+                            </tr>
+                            <tr>
+                                <th>러닝타임</th>
+                                <td>131분</td>
+                            </tr>
+                            <tr>
+                                <th>배급</th>
+                                <td>CJ ENM</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div id="tab-2" class="tab-content">
+                        <!-- 탭 메뉴 2 내용 -->
+                        <!--할 일: 내용영역 안에서 스크롤 가능하게, 반응형으로 이미지 리사이징되게-->
+                        <ul>
+                            <li>감독</li>
+                            <li>
+                                <img src="images/movie/person.png">
+                            </li>
+                            <li>주연</li>
+                            <li>
+                                <img src="images/movie/person.png">
+                                <img src="images/movie/person.png">
+                                <img src="images/movie/person.png">
+                            </li>
+                            <li>조연</li>
+                            <li>
+                                <img src="images/movie/person.png">
+                                <img src="images/movie/person.png">
+                                <img src="images/movie/person.png">
+                                <img src="images/movie/person.png">
+                            </li>
+                            <li>단역</li>
+                            <li>단역 사진</li>
+                            <li>특별출연</li>
+                            <li>특별출연 사진</li>
+                        </ul>
+                    </div>
+
+                    <div id="tab-3" class="tab-content">
+                        <!--탭 메뉴 3 내용-->
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>
+                        <br>
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>    
+                    </div>
+
+                    <div id="tab-4" class="tab-content">
+                        <!--탭 메뉴 4 내용-->
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>
+                        <br>
+                        <p>대한민국은 국제평화의 유지에 노력하고 침략적 전쟁을 부인한다. 국군의 조직과 편성은 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다. 모든 국민은 소급입법에 의하여 참정권의 제한을 받거나 재산권을 박탈당하지 아니한다.</p>
+                    </div>
+                    <!-- 탭 메뉴 내용 끝 -->
+                    </div>    
+
+        </div>     
+    </div>
+    
+    <div class="secondSection">
+        <h2>관련 영상</h2>
+        <div class="relevant-video">
+            
+        </div>
+    </div>
+
+    <div class="thirdSection">
+        <h2>별점 & 리뷰</h2>
+        <div class="rating-review">
+            <!-- 별점리뷰 섹션의 상단. 나의 별점 및 리뷰글 쓰기(등록하기), 나만의 리스트에 추가 기능 -->
+            <div class="write-rating-review">
+                
+                <table>
+                    <tr>
+                        <th>
+                            <img src="images/user_profile.png" width="180px" height="180px" alt="사용자 프로필 사진">
+                            <p>김비트 님</p>
+                            <!--별점 매기기-->
+                            <div class="rating-star">
+                                <span class="starR1 on">별1_왼쪽</span>
+                                <span class="starR2">별1_오른쪽</span>
+                                <span class="starR1">별2_왼쪽</span>
+                                <span class="starR2">별2_오른쪽</span>
+                                <span class="starR1">별3_왼쪽</span>
+                                <span class="starR2">별3_오른쪽</span>
+                                <span class="starR1">별4_왼쪽</span>
+                                <span class="starR2">별4_오른쪽</span>
+                                <span class="starR1">별5_왼쪽</span>
+                                <span class="starR2">별5_오른쪽</span>
+                            </div>
+                        </th>
+                        <td><!--나의 리뷰 작성 섹션-->
+                            <form action="#" method="post">
+                                <div>
+                                    <label for="my-review">나의 리뷰</label>
+                                    <textarea id="my-review" name="my-review" placeholder="리뷰를 입력하세요."></textarea><br>
+                                </div>
+                                <input type="submit" id="submit-button" value="등록하기">
+                            </form>
+                            
+                        </td>
+                    </tr>
+
+                </table>
+                
+            </div>
+
+            <!--별점리뷰 섹션의 하단. 다른 사람들의 별점 및 리뷰글 읽기-->
+            <div class="read-rating-review">
+
+                <table>
+                    <tr class="rating-review-line">
+                        <th>
+                            <img src="images/user_profile.png" width="180px" height="180px" alt="사용자 프로필 사진">
+                            <p>김비트 님</p>
+                            <div class="unchangeable-rating-star" id="user1" data-rate="3">
+                                <span class="starR1 on">별1_왼쪽</span>
+                                <span class="starR2">별1_오른쪽</span>
+                                <span class="starR1">별2_왼쪽</span>
+                                <span class="starR2">별2_오른쪽</span>
+                                <span class="starR1">별3_왼쪽</span>
+                                <span class="starR2">별3_오른쪽</span>
+                                <span class="starR1">별4_왼쪽</span>
+                                <span class="starR2">별4_오른쪽</span>
+                                <span class="starR1">별5_왼쪽</span>
+                                <span class="starR2">별5_오른쪽</span>
+                            </div>
+                        </th>
+                        <td>
+                            모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포ㆍ구속ㆍ압수ㆍ수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌ㆍ보안처분 또는 강제노역을 받지 아니한다.
+                            모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다.
+                            체포ㆍ구속ㆍ압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.
+                            누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+                            누구든지 체포 또는 구속의 이유와 변호인의 조력을 받을 권리가 있음을 고지받지 아니하고는 체포 또는 구속을 당하지 아니한다. 체포 또는 구속을 당한 자의 가족등 법률이 정하는 자에게는 그 이유와 일시ㆍ장소가 지체없이 통지되어야 한다.
+                            누구든지 체포 또는 구속을 당한 때에는 적부의 심사를 법원에 청구할 권리를 가진다.
+                            피고인의 자백이 고문ㆍ폭행ㆍ협박ㆍ구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때 또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.
+                        </td>
+                    </tr>
+                    <tr class="rating-review-line">
+                        <th>
+                            <img src="images/user_profile.png" width="180px" height="180px" alt="사용자 프로필 사진">
+                            <p>박비트 님</p>
+                            <div class="unchangeable-rating-star" id="user2">
+                                <span class="starR1 on">별1_왼쪽</span>
+                                <span class="starR2">별1_오른쪽</span>
+                                <span class="starR1">별2_왼쪽</span>
+                                <span class="starR2">별2_오른쪽</span>
+                                <span class="starR1">별3_왼쪽</span>
+                                <span class="starR2">별3_오른쪽</span>
+                                <span class="starR1">별4_왼쪽</span>
+                                <span class="starR2">별4_오른쪽</span>
+                                <span class="starR1">별5_왼쪽</span>
+                                <span class="starR2">별5_오른쪽</span>
+                            </div>
+                        </th>
+                        <td>
+                            체포ㆍ구속ㆍ압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.
+                            누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+                        </td>
+                    </tr>
+                    <tr class="rating-review-line">
+                        <th>
+                            <img src="images/user_profile.png" width="180px" height="180px" alt="사용자 프로필 사진">
+                            <p>이비트 님</p>
+                            <div class="unchangeable-rating-star" id="user3">
+                                <span class="starR1 on">별1_왼쪽</span>
+                                <span class="starR2">별1_오른쪽</span>
+                                <span class="starR1">별2_왼쪽</span>
+                                <span class="starR2">별2_오른쪽</span>
+                                <span class="starR1">별3_왼쪽</span>
+                                <span class="starR2">별3_오른쪽</span>
+                                <span class="starR1">별4_왼쪽</span>
+                                <span class="starR2">별4_오른쪽</span>
+                                <span class="starR1">별5_왼쪽</span>
+                                <span class="starR2">별5_오른쪽</span>
+                            </div>
+                        </th>
+                        <td>
+                            체포ㆍ구속ㆍ압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.
+                            누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+                            <br>
+                            체포ㆍ구속ㆍ압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 다만, 현행범인인 경우와 장기 3년 이상의 형에 해당하는 죄를 범하고 도피 또는 증거인멸의 염려가 있을 때에는 사후에 영장을 청구할 수 있다.
+                            누구든지 체포 또는 구속을 당한 때에는 즉시 변호인의 조력을 받을 권리를 가진다. 다만, 형사피고인이 스스로 변호인을 구할 수 없을 때에는 법률이 정하는 바에 의하여 국가가 변호인을 붙인다.
+                        </td>
+                    </tr>
+                    <tr class="rating-review-line">
+                        <th>
+                            <img src="images/user_profile.png" width="180px" height="180px" alt="사용자 프로필 사진">
+                            <p>전비트 님</p>
+                            <div class="unchangeable-rating-star" id="user4">
+                                <span class="starR1 on">별1_왼쪽</span>
+                                <span class="starR2">별1_오른쪽</span>
+                                <span class="starR1">별2_왼쪽</span>
+                                <span class="starR2">별2_오른쪽</span>
+                                <span class="starR1">별3_왼쪽</span>
+                                <span class="starR2">별3_오른쪽</span>
+                                <span class="starR1">별4_왼쪽</span>
+                                <span class="starR2">별4_오른쪽</span>
+                                <span class="starR1">별5_왼쪽</span>
+                                <span class="starR2">별5_오른쪽</span>
+                            </div>
+                        </th>
+                        <td>
+                            체포ㆍ구속ㆍ압수 또는 수색을 할 때에는 적법한 절차에 따라 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 
+                        </td>
+                    </tr>
+
+
+                </table>
+              
+
+
+
+            </div>
+            
+        </div> <!--별점리뷰섹션의 끝-->
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            //작품 제목 섹션의 하트 아이콘 '나의 작품 리스트에 추가/삭제' 기능
+            $("#heart").hover( //클릭할 수 있는 요소라고 알려줌.
+                function () { // mouseover
+                    $(this).attr("width", "35px");
+                },
+                function () { // mouseout
+                    $(this).attr("width", "30px");
+                }
+            );
+
+            let emptyHeart = true;
+            $("#heart").on("click", function() {
+                if(emptyHeart) {
+                    $(this).attr("src", "images/icon_red_heart.png");
+                    emptyHeart = false;
+                    alert("나만의 작품 리스트에 추가되었습니다.");
+                } else {
+                    $(this).attr("src", "images/icon_white_heart.png");
+                    emptyHeart = true;
+                    alert("나만의 작품 리스트에서 삭제하였습니다.");
+                }
+            });
+
+            $("submit-button").on("click", function() {
+                alert("나의 리뷰가 등록되었습니다.");
+            });
+
+            //기본정보 섹션의 탭전환 기능
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+        
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+        
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            })
+
+            //별점&리뷰 섹션의 나의 별점 매기기 기능
+            $(".rating-star span").click(function () {
+                $(this).parent().children('span').removeClass('on');
+                $(this).addClass('on').prevAll('span').addClass('on');
+                return false;
+            });
+            
+            //별점&리뷰 섹션의 별점 표시하기 기능
+            //(작성중))
+            // var rating = $(".unchangeable-rating-star");
+
+            // rating.each(function() {
+            //     //"data-rate"속성을 받아와서 타겟 스코어에 저장하고, 
+            //     var targetScore = $(this).attr("data-rate");
+
+            //     var index = targerScore * 2  - 1;
+            //     $(this).nth-child(index)
+
+    
+        });
+    </script>
+
+</body>
+</html>
