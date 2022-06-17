@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mypage220614.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/ress.min.css">
+    <style>
+        div.modal-header {
+            background-color: #fff;
+           
+        }
+
+        div.modal-body {
+            background-color: #fff;
+        }
+
+        div.modal-footer {
+            background-color: #fff;
+        }
+        h4.modal-title {
+            background-color: #fff;
+            color:black;
+            width: 100%;
+        }
+
+        label {
+            background-color: rgb(116, 114, 114);
+            color: black;
+        }
+
+        input {
+            background-color: #fff;
+        }
+        
+        a {
+            background-color: #0d6efd;
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="info">
+            <div id="photo">
+                <img src="images/my_2.jpg" alt="">
+                <p><b>인생영화</b>
+                </p>
+            </div>
+                <div id="idPassword">
+                    <table>
+                        <tr class="space">
+                            <th>아이디</th>
+                            <td>honghong</td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td>********</td>
+                        </tr>
+                        <tr>
+                            <th>닉네임</th>
+                            <td>홍홍</td>
+                        </tr>
+                        <tr>
+                            <th>휴대전화</th>
+                            <td>010-0000-0000</td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>honghong@naver.com</td>
+                        </tr> 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                           
+                        </tr>
+                        <tr id="ci">
+                            <th><button class="btn btn-primary" type="button"
+                                data-bs-toggle="modal" data-bs-target="#intro">
+                                    회원정보 수정
+                                </button>
+                                <div class="modal fade" id="intro">
+                                    <!--
+                                        modal-dialog : 모달 창 영역 설정
+                                    -->
+                                    <div class="modal-dialog">
+                                        <!--
+                                            modal-dialog : 모달 콘텐트 영역 설정
+                                        -->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">회원정보 수정</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label for="">비밀번호<input type="text"></label>
+                                                <br>
+                                                <label for="">닉네임<input type="text"></label>
+                                                <br>
+                                                <label for="">휴대전화<input type="text"></label>
+                                                <br>
+                                                <label for="">이메일<input type="text"></label>
+                                            
+                                                <div class="modal-footer">
+                                                    <a href="mypage220614c.html"><button class="btn btn-primary" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#intro">
+                                                             확인  
+                                                    </button></a> 
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </table> 
+                    
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div id="contents">
+            <div id="list">
+                <b>나만의 리스트</b>-최근 찜한 영화 
+                <ul>
+                    <li>
+                        <div class="profile">
+                            <div class="profile-card">
+                                <img src="images/my_4.jpg" alt="">
+                            </div>
+                            <p class="profile-card">선택 1</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile">
+                            <div class="profile-card">
+                                <img src="images/my_5.jpg" alt="">
+                            </div>
+                            <p class="profile-card">선택 2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile">
+                            <div class="profile-card">
+                                <img src="images/my_6.jpg" alt="">
+                            </div>
+                            <p class="profile-card">선택 3</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="review">
+                <div class="review-text"><b>나의 리뷰</b>-최근 등록한 리뷰</div>
+                    <div class="profile">
+                        <div class="main-carousel">
+                            <div class="mySlides fate">
+                                <div class="devide">
+                                    <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    <img id="class2" src="images/my_5.jpg" alt="">
+                            
+                                    <img id="class3" src="images/my_6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mySlides fate">
+                                <div class="devide">
+                                    <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    <img id="class2" src="images/my_5.jpg" alt="">
+                            
+                                    
+                                </div>
+                            </div>
+                            <div class="mySlides fate">
+                                <div class="devide">
+                                    <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    
+                                </div>
+                            </div>
+                            
+                                    
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+
+        $(document).ready(function() {
+            showSlides(slideIndex);
+
+            // setInterval(function() {
+            // showSlides(++slideIndex);
+            // }, 3000);
+        });
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+        }
+    
+    </script>
+</body>
+
+</html>
