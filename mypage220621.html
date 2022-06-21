@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mypage220620.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/ress.min.css">
+    <style>
+        /*네브바 스타일*/
+        body {
+          background-color: rgba(0, 0, 0, 0.960);
+        }
+        
+        .logo {
+          margin: auto;
+          display: flex;
+          justify-content: center;
+          box-sizing: border-box;
+        }
+
+        .logo1 {
+          vertical-align: middle;
+        }
+
+        button {
+          margin-bottom: auto;
+          justify-content: space-between;
+        }
+
+        .input-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .line {
+          width: 140px;
+          background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+        }
+
+        .line2 {
+          width: 100%;
+          color: white;
+        }
+
+        .line3 {
+          width: 100%;
+          color: white;
+          margin-top: 256px;
+        }
+
+        .line4 {
+          width: 100%;
+          color: white;
+        }
+
+        .line5 {
+          width: 100%;
+          color: white;
+          margin-bottom: -100px;
+          
+        }
+
+        .container-fluid {
+          width: 100%;
+        }
+
+        .d-flex {
+          display: block;
+          margin: 0 200px;
+          width: 100%;
+        }
+
+        .mpos {
+          width: auto;
+          height: 100px;
+        }
+
+      
+        h3 {
+          color: white;
+        }
+
+        .carousel-item {
+          width: 100%;
+          text-align: center;
+        }
+
+        .center-block1 {
+          width: 19%;
+        }
+
+        .center-block2 {
+          width: 19%;
+        }
+
+
+        .center-block3 {
+          width: 19%;
+        }
+
+        .center-block4 {
+          width: 19%;
+        }
+
+        .center-block5 {
+          width: 19%;
+        }
+
+        .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+        .fade:not(.show) {
+        opacity: 1;
+        }
+        
+        div.modal-header {
+            background-color: gray;
+           
+        }
+
+        div.modal-body {
+            background-color: gray;
+        }
+
+        div.modal-footer {
+            background-color: gray;
+        }
+
+        h4.modal-title {
+            background-color: gray;
+            color:black;
+            width: 100%;
+        }
+
+        /*label {
+            background-color: gray;
+            color: black;
+        }*/
+
+        input {
+            border: black 0.5px solid;
+            margin-top: 10px;
+            margin-bottom: 5px;
+         
+        }
+        .input-text {
+            margin-left: 17px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .image-container label {
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+        }
+
+        #preview-image {
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 30px;
+            margin-left: 10px;
+            margin: 10px 10px;
+        }
+
+        .label-t {
+            background-color: gray;
+            color: black;
+        }
+        .bg-dark {
+            background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+        }
+
+        #navbar {
+            background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+        }
+
+        .nav-link {
+            background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!--네브바-->
+    <nav class="navbar navbar-dark bg-rgba(0, 0, 0, 0.960)">
+         <div class="container-fluid">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+ 
+           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+               <button class="btn btn-secondary btn-sm" type="button">
+                 <a href="login.html">로그인</a></button>
+               <button class="btn btn-secondary btn-sm" type="button">
+                 <a href="join.html">회원가입</a></button>
+           </div>
+         </div>
+      </nav>
+       <div class="collapse" id="navbarToggleExternalContent">
+         <div class="bg-dark p-4">
+           <ul class="navbar-nav text-white me-auto" id="navbar">
+             <li class="nav-item">
+               <a href="#" class="nav-link">회원님 환영합니다!</a>
+             </li>
+             <hr class="line">
+             <li class="nav-item">
+                 <a href="main.html" class="nav-link">H O M E</a>
+               </li>
+             <li class="nav-item dropdown">
+               <a href="" class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown">장르별 영화</a>
+                 <div class="dropdown-menu">
+                   <a href="#" class="dropdown-item">액션</a>
+                   <a href="#" class="dropdown-item">드라마</a>
+                   <a href="#" class="dropdown-item">멜로</a>
+                 </div>
+             </li>
+ 
+             <li class="nav-item dropdown">
+               <a href="" class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown">장르별 드라마</a>
+                 <div class="dropdown-menu">
+                   <a href="#" class="dropdown-item">가족</a>
+                   <a href="#" class="dropdown-item">시트콤</a>
+                   <a href="#" class="dropdown-item">사극</a>
+                 </div>
+             </li>
+             
+             <li class="nav-item dropdown">
+               <a href="" class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown">마이페이지</a>
+                 <div class="dropdown-menu">
+                   <a href="#" class="dropdown-item">작품 리스트</a>
+                   <a href="#" class="dropdown-item">나만의 리스트</a>
+                 </div>
+             </li>
+ 
+             <li class="nav-item dropdown">
+               <a href="" class="nav-link dropdown-toggle"
+                 data-bs-toggle="dropdown">게시판</a>
+                  <div class="dropdown-menu">
+                     <a href="#" class="dropdown-item">공지사항</a>
+                     <a href="#" class="dropdown-item">FQA</a>
+                     <a href="#" class="dropdown-item">1:1문의</a>
+                   </div>
+             </li>
+             
+                  <a href="#" class="nav-link">추가 내용</a>
+           </ul>
+         </div>
+       </div> 
+     <!--네브바의 끝-->
+    <div id="container">
+        <div id="info">
+            <div id="photo">
+                <div class="image-container">
+                    <label for="input-image">
+                        <img style="width: 350px; height: 350px;" id="preview-image" src="images/user_profile.png">
+                    </label>
+                        <input style="display: none;" type="file" id="input-image" accept="image/png, image/jpeg">
+                </div>
+            </div>
+                <div id="idPassword">
+                    <table>
+                        <tr class="space">
+                            <th>아이디</th>
+                            <td>honghong</td>
+                        </tr>
+                        <tr>
+                            <th>비밀번호</th>
+                            <td>********</td>
+                        </tr>
+                        <tr>
+                            <th>닉네임</th>
+                            <td>홍홍</td>
+                        </tr>
+                        <tr>
+                            <th>휴대전화</th>
+                            <td>010-0000-0000</td>
+                        </tr>
+                        <tr>
+                            <th>이메일</th>
+                            <td>honghong@naver.com</td>
+                        </tr> 
+                        <tr>
+                            <th></th>
+                            <td></td>
+                           
+                        </tr>
+                        <tr id="ci">
+                            <th><button class="btn btn-primary" type="button"
+                                data-bs-toggle="modal" data-bs-target="#intro">
+                                    회원정보 수정
+                                </button>
+                                <div class="modal fade" id="intro">
+                                    <!--
+                                        modal-dialog : 모달 창 영역 설정
+                                    -->
+                                    <div class="modal-dialog">
+                                        <!--
+                                            modal-dialog : 모달 콘텐트 영역 설정
+                                        -->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">회원정보 수정</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <label class="label-t"for="">비밀번호 &nbsp;&nbsp;<input  type="text"></label>
+                                                <br>
+                                                <label class="label-t" for="">닉네임 &nbsp;&nbsp;<input class="input-text" type="text"></label>
+                                                <br>
+                                                <label class="label-t" for="">휴대전화 &nbsp;&nbsp;<input type="text"></label>
+                                                <br>
+                                                <label class="label-t" for="">이메일 &nbsp;&nbsp;<input class="input-text" type="text"></label>
+                                            
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary" type="button"
+                                                    data-bs-toggle="modal" data-bs-target="#intro"
+                                                    onclick="test()">
+                                                             확인  
+                                                    </button> 
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </table> 
+                    
+            </div>
+        </div>
+        
+        <div id="contents">
+            <div id="list">
+                <div class="list-text"><b>나만의 리스트</b>  &nbsp; &nbsp; &nbsp;-최근 찜한 영화</div>
+                <div class="profile">
+                    <div class="main-carousel1">
+                        <div class="mySlides1 fate1">
+                            <div class="devide1">
+                                <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    <img id="class2" src="images/my_5.jpg" alt="">
+                            
+                                    <img id="class3" src="images/my_6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="mySlides1 fate1">
+                            <div class="devide1">
+                                <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    <img id="class2" src="images/my_5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="mySlides1 fate1">
+                            <div class="devide1">
+                                <img id="class1" src="images/my_4.jpg" alt="">
+                            </div>
+                        </div>
+                                 
+                        <a class="prev">❮</a>
+                        <a class="next">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div id="review">
+                <div class="review-text"><b>나의 리뷰</b> &nbsp; &nbsp; &nbsp; &nbsp;-최근 등록한 리뷰</div>
+                    <div class="profile">
+                        <div class="main-carousel">
+                            <div class="mySlides fate">
+                                <div class="devide">
+                                    <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    <img id="class2" src="images/my_5.jpg" alt="">
+                            
+                                    <img id="class3" src="images/my_6.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="mySlides fate">
+                                <div class="devide">
+                                    <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    <img id="class2" src="images/my_5.jpg" alt="">
+                            
+                                    
+                                </div>
+                            </div>
+                            <div class="mySlides fate">
+                                <div class="devide">
+                                    <img id="class1" src="images/my_4.jpg" alt="">
+                                
+                                    
+                                </div>
+                            </div>
+                            
+                                    
+                            <a class="prev">❮</a>
+                            <a class="next">❯</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slideIndex1 = 1;
+        var slideIndex2 = 1;
+
+        $(document).ready(function() {
+            showSlides(slideIndex1, "main-carousel1");
+            showSlides(slideIndex2, "main-carousel");
+
+            $(".prev").on("click", function() {
+                var obj = $(this).parent();
+                plusSlides(-1, obj);
+            });
+
+            $(".next").on("click", function() {
+                var obj = $(this).parent();
+                plusSlides(1, obj);
+            });
+            // setInterval(function() {
+            // showSlides(++slideIndex);
+            // }, 3000);
+        });
+        
+        function plusSlides(n, obj) {
+            if(obj.hasClass("main-carousel1"))
+                showSlides(slideIndex1 += n, "main-carousel1");
+            else 
+                showSlides(slideIndex2 += n, "main-carousel");
+        }
+
+        function showSlides(n, text) {
+            var i;
+            if(text == "main-carousel1") {
+                var slides = document.getElementsByClassName("mySlides1");
+
+                if (n > slides.length) {
+                    slideIndex1 = 1
+                }
+                
+                if (n < 1) {
+                    slideIndex1 = slides.length
+                }
+            } else {
+                var slides = document.getElementsByClassName("mySlides");
+
+                if (n > slides.length) {
+                    slideIndex2 = 1
+                }
+                
+                if (n < 1) {
+                    slideIndex2 = slides.length
+                }
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+
+            if(text == "main-carousel1")
+                slides[slideIndex1 - 1].style.display = "block";
+            else 
+                slides[slideIndex2 - 1].style.display = "block";
+
+
+        }
+        
+        
+    function test() {
+        alert("수정이 완료되었습니다.");
+    }
+
+    
+
+//프로필사진 등록 기능
+function readImage(input) {
+    // 인풋 태그에 파일이 있는 경우
+    if(input.files && input.files[0]) {
+        // 이미지 파일인지 검사 (생략)
+        // FileReader 인스턴스 생성
+        const reader = new FileReader()
+        // 이미지가 로드가 된 경우
+        reader.onload = e => {
+            const previewImage = document.getElementById("preview-image")
+            previewImage.src = e.target.result
+        }
+        // reader가 이미지 읽도록 하기
+        reader.readAsDataURL(input.files[0])
+    }
+}
+// input file에 change 이벤트 부여
+const inputImage = document.getElementById("input-image")
+inputImage.addEventListener("change", e => {
+    readImage(e.target)
+})
+//끝 - 프로필사진 등록 기능
+
+    </script>
+</body>
+
+</html>
