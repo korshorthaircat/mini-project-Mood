@@ -42,23 +42,7 @@
           color: white;
         }
 
-        .line3 {
-          width: 100%;
-          color: white;
-          margin-top: 256px;
-        }
-
-        .line4 {
-          width: 100%;
-          color: white;
-        }
-
-        .line5 {
-          width: 100%;
-          color: white;
-          margin-bottom: -100px;
-          
-        }
+       
 
         .container-fluid {
           width: 100%;
@@ -74,7 +58,7 @@
           text-decoration: none;
           color: white;
         }
-        
+
         a:hover {
           color: white;
         }
@@ -115,11 +99,6 @@
           width: 19%;
         }
 
-        .logo2 {
-          width: auto;
-          height: 70px;
-        }
-
         .log_button {
           width: 100%;
           height: 50px;
@@ -138,7 +117,11 @@
         --bs-btn-hover-bg: rgb(128,11,11);
         --bs-btn-hover-border-color: rgb(128,11,11);
         }
-       
+
+        .logo2 {
+          width: auto;
+          height: 70px;
+        }
 
       
       
@@ -154,17 +137,16 @@
               aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="main.html">
-            <img src="images/logo_small2.png" class="logo2" alt="logo2">
-            </a>
+
+            <a href="main_enter.html">
+                <img src="images/logo_small2.png" class="logo2" alt="logo2">
+            </a>  
           </div>
-
-
           <div class="d-grid gap-2 d-md-flex justify-content-md-end">
               <button class="btn btn-secondary btn-sm" type="button">
-                <a href="main_login.html" class="logo2">로그인</a></button>
+                <a href="main_login.html">로그아웃</a></button>
               <button class="btn btn-secondary btn-sm" type="button">
-                <a href="main_join.html">회원가입</a></button>
+                <a href="mylist1.html">마이페이지</a></button>
           </div>
         </div>
      </nav>
@@ -172,7 +154,12 @@
         <div class="bg-dark p-4">
           <ul class="navbar-nav text-white me-auto">
             <li class="nav-item">
-              <a href="main.html" class="nav-link">H O M E</a>
+              <a href="#" class="nav-link">회원님 환영합니다!</a>
+            </li>
+            <hr class="line">
+            
+            <li class="nav-item">
+              <a href="main_enter.html" class="nav-link">H O M E</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -206,7 +193,7 @@
 
             <li class="nav-item dropdown">
               <a href="" class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown">고객센터</a>
+                data-bs-toggle="dropdown">게시판</a>
                  <div class="dropdown-menu">
                     <a href="#" class="dropdown-item">공지사항</a>
                     <a href="#" class="dropdown-item">FQA</a>
@@ -236,24 +223,24 @@
       <!--나만의 리스트-->
       <h3>나만의 리스트</h3>
 
-      <hr class="line4">
+      <hr class="line2">
        
       <div class>
         <div id="carouselExampleControls0" class="carousel slide;" 
          data-bs-interval="false">
          <div class="carousel-inner center-block ">
            <div class="carousel-item active " >
-             <a href="#">
-             <img src="images/user_profile.png" class="center-block1 " alt="...">
+             <a href="mylist1.html">
+             <img src="images/user_profile.png" class="center-block1 " alt="ml1">
              </a>
-             <a href="#">
-             <img src="images/user_profile.png" class="center-block2 " alt="...">
+             <a href="mylist2.html">
+             <img src="images/user_profile.png" class="center-block2 " alt="ml2">
              </a>
-             <a href="#">
-             <img src="images/user_profile.png" class="center-block3 " alt="...">
+             <a href="mylist3.html">
+             <img src="images/user_profile.png" class="center-block3 " alt="ml3">
              </a>
-             <a href="#">
-             <img src="images/user_profile.png" class="center-block4 " alt="...">
+             <a href="mylist4.html">
+             <img src="images/user_profile.png" class="center-block4 " alt="ml4">
              </a>
              
              
@@ -293,14 +280,14 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <hr class="line4">
+        <hr class="line2">
        </div><br><br>
 
        
        <h3>영화 추천</h3>
       
 
-      <hr class="line4">
+      <hr class="line2">
        
       <div>
         <div id="carouselExampleControls1" class="carousel slide ;" 
@@ -308,41 +295,41 @@
          <div class="carousel-inner center-block " >
            <div class="carousel-item active" >
             <a href="#">
-              <img src="images/movie/마녀2_포스터.jpg" class="center-block1 " alt="movie1">
-             </a>
-             <a href="#">
-              <img src="images/movie/범죄도시_포스터.jfif" class="center-block2 " alt="movie2">
-             </a>
-             <a href="#">
-              <img src="images/movie/쥬라기월드_포스터.jpeg" class="center-block3 " alt="movie3">
-             </a>
-             <a href="#">
-              <img src="images/movie/토르4_포스터.jfif" class="center-block4 " alt="movie4">
-             </a>
-             <a href="#">
-              <img src="images/movie/럭키_포스터.jfif" class="center-block5 " alt="movie5">
-             </a> 
+             <img src="images/movie/마녀2_포스터.jpg" class="center-block1 " alt="movie1">
+            </a>
+            <a href="#">
+             <img src="images/movie/범죄도시_포스터.jfif" class="center-block2 " alt="movie2">
+            </a>
+            <a href="#">
+             <img src="images/movie/쥬라기월드_포스터.jpeg" class="center-block3 " alt="movie3">
+            </a>
+            <a href="#">
+             <img src="images/movie/토르4_포스터.jfif" class="center-block4 " alt="movie4">
+            </a>
+            <a href="#">
+             <img src="images/movie/럭키_포스터.jfif" class="center-block5 " alt="movie5">
+            </a> 
            </div>
            
            <div class="carousel-item ">
             <a href="">
-              <img src="images/movie/건축학개론_포스터.jfif" class="center-block1 " alt="movie6">
-             </a>
-             <a href="">
-              <img src="images/movie/나를찾아줘_포스터.jfif" class="center-block2 " alt="movie7">
-             </a>
-             <a href="">
-              <img src="images/movie/셔터_포스터.jfif" class="center-block3 " alt="movie8">
-             </a>
-             <a href="">
-              <img src="images/movie/헤어질결심_포스터.jfif" class="center-block4 " alt="movie9">
-             </a>
-             <a href="">
-              <img src="images/movie/타이타닉_포스터.jfif" class="center-block5 " alt="movie10">
-             </a>
+             <img src="images/movie/건축학개론_포스터.jfif" class="center-block1 " alt="movie6">
+            </a>
+            <a href="">
+             <img src="images/movie/나를찾아줘_포스터.jfif" class="center-block2 " alt="movie7">
+            </a>
+            <a href="">
+             <img src="images/movie/셔터_포스터.jfif" class="center-block3 " alt="movie8">
+            </a>
+            <a href="">
+             <img src="images/movie/헤어질결심_포스터.jfif" class="center-block4 " alt="movie9">
+            </a>
+            <a href="">
+             <img src="images/movie/타이타닉_포스터.jfif" class="center-block5 " alt="movie10">
+            </a>
            </div>
-         </div>
-         
+           
+                  
           <button class="carousel-control-prev" type="button" 
            data-bs-target="#carouselExampleControls1" 
            data-bs-slide="prev">
@@ -356,12 +343,12 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <hr class="line4">
+        <hr class="line2">
        </div><br><br>
 
        <h3>드라마 추천</h3>
       
-       <hr class="line4">
+      <hr class="line2">
        
       <div>
         <div id="carouselExampleControls2" class="carousel slide ;" 
@@ -406,7 +393,11 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <hr class="line4">
+        <hr class="line2">
       </div>
+       
+       
+       
+      
 </body>
 </html>
